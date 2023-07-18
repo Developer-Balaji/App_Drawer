@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="1280dp"
+    android:layout_height="720dp">
+
+    <ImageView
+        android:id="@+id/background_image"
+        android:layout_width="1280dp"
+        android:layout_height="720dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/wap2"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintDimensionRatio="16:9"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <GridView
+        android:id="@+id/grid"
+        style="@android:style/Widget.Material.Light.GridView"
+        android:layout_width="1242dp"
+        android:layout_height="694dp"
+        android:clipToPadding="false"
+        android:columnWidth="80dp"
+        android:gravity="center"
+        android:horizontalSpacing="17dp"
+        android:numColumns="7"
+        android:padding="45dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="17dp"
+        app:layout_constraintBottom_toBottomOf="@+id/background_image"
+        app:layout_constraintEnd_toEndOf="@+id/background_image"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toStartOf="@id/background_image"
+        app:layout_constraintTop_toTopOf="@+id/background_image"
+        app:layout_constraintVertical_bias="0.727" />
+
+</android.support.constraint.ConstraintLayout>
